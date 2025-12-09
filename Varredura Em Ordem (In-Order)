@@ -1,0 +1,5 @@
+def em_ordem(raiz):
+    if raiz is not None:
+        em_ordem(raiz.esquerda)
+        print(raiz.valor, end=" ")
+        em_ordem(raiz.direita)
