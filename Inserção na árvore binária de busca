@@ -1,0 +1,10 @@
+def inserir(raiz, valor):
+    if raiz is None:
+        return Node(valor)
+
+    if valor < raiz.valor:
+        raiz.esquerda = inserir(raiz.esquerda, valor)
+    elif valor > raiz.valor:
+        raiz.direita = inserir(raiz.direita, valor)
+
+    return raiz
